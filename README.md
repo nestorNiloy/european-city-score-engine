@@ -3,7 +3,9 @@
 > Which European city is the best fit for you — based on data, not gut feeling?
 
 **🔴 Live Demo: [european-city-score-engine.streamlit.app](https://european-city-score-engine.streamlit.app)**
+
 ![App Demo](Animation.gif)
+
 A data-driven web application that ranks top European tech cities using live job market data and multi-factor scoring. Users adjust priority weights interactively and watch the rankings update in real time.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
@@ -62,12 +64,12 @@ Final score = weighted sum of all normalized factor scores.
 
 ## 🗂️ Project Structure
 
-european-city-score-engine/
-├── app.py                  # Streamlit app — UI, charts, layout
-├── requirements.txt        # Dependencies
-├── data/
-│   ├── fetcher.py          # Adzuna API calls + static data
-│   └── scorer.py           # Normalization + weighted scoring logic
+    european-city-score-engine/
+    ├── app.py                  # Streamlit app — UI, charts, layout
+    ├── requirements.txt        # Dependencies
+    ├── data/
+    │   ├── fetcher.py          # Adzuna API calls + static data
+    │   └── scorer.py           # Normalization + weighted scoring logic
 
 ---
 
@@ -86,8 +88,9 @@ streamlit run app.py
 
 This project uses the [Adzuna API](https://developer.adzuna.com) for live job data.
 
-1. Register for a free key at developer.adzuna.com
-2. Create a `.env` file in the root directory:
+1. Register for a free key at [developer.adzuna.com](https://developer.adzuna.com)
+2. Create a `.env` file in the root directory with the following variables:
+
 ADZUNA_APP_ID=your_app_id_here
 ADZUNA_APP_KEY=your_app_key_here
 
