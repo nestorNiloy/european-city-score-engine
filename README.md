@@ -3,7 +3,7 @@
 > Which European city is the best fit for you — based on data, not gut feeling?
 
 **🔴 Live Demo: [european-city-score-engine.streamlit.app](https://european-city-score-engine.streamlit.app)**
-
+![App Demo](Animation.gif)
 A data-driven web application that ranks top European tech cities using live job market data and multi-factor scoring. Users adjust priority weights interactively and watch the rankings update in real time.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
