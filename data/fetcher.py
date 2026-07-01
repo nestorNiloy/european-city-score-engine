@@ -1,8 +1,9 @@
 import requests
 import pandas as pd
+import os
 
-APP_ID = "66ff9d19"
-APP_KEY = "212d688401bea5cd4a9484cce9ebe4a3"
+APP_ID = os.getenv("ADZUNA_APP_ID", "66ff9d19")
+APP_KEY = os.getenv("ADZUNA_APP_KEY", "212d688401bea5cd4a9484cce9ebe4a3")
 
 CITIES = {
     "Berlin": "de",
@@ -12,9 +13,6 @@ CITIES = {
     "Zurich": "ch"
 }
 
-# Static Numbeo indices (2024 - numbeo.com)
-# Cost of Living: higher = more expensive
-# Safety Index: higher = safer
 STATIC_DATA = {
     "Berlin":    {"Cost of Living Index": 58.2, "Safety Index": 55.1, "Internet Speed (Mbps)": 107},
     "Munich":    {"Cost of Living Index": 68.4, "Safety Index": 62.3, "Internet Speed (Mbps)": 132},
